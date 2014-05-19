@@ -2,6 +2,7 @@
 
 from flask import Flask, render_template, flash, g, abort
 import os
+import sqlite3
 
 app = Flask(__name__) 
 app.config.from_object(__name__)
