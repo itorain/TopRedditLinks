@@ -4,4 +4,11 @@
   <p>Hello World!</p>
   <p>Welcome to our sweet webapp-database-extrodonair!</p>
 </div>
+<ul class=entries>
+{% for entry in entries %}
+<li>{{ entry.title }} {{ entry.link }}
+{% else %}
+<em>BORK! No entries found :(</em>
+{% endfor %}
+</ul>
 {% endblock %}

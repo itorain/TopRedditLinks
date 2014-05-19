@@ -35,7 +35,12 @@ def close_db(error):
 def hell_world():
     # do work
     flash('UNDER DEVELOMENT')
-    return render_template('app.html')
+
+    db = get_db()
+    cur = db.execute('title, link from links order by id desc')
+    entries = cur.fetchall()
+
+    return render_template('app.html', entries=entries)
 
 # a few example pages
 @app.route('/hello')
