@@ -5,8 +5,9 @@ app = Flask(__name__)
 
 # app.route is called a decorator. don't worry about it too much right
 # now.
+@app.route('/')
 def hell_world():
     return 'Hello World!'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
