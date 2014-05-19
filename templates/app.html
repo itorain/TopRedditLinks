@@ -6,7 +6,7 @@
 </div>
 <ul class=entries>
 {% for entry in entries %}
-<li>{{ entry.title }} {{ entry.link }}
+<li><a href="{{ entry.link }}">{{ entry.title }}</a>
 {% else %}
 <em>BORK! No entries found :(</em>
 {% endfor %}
