@@ -33,12 +33,12 @@ def close_db(error):
 # app.route is called a decorator. don't worry about it too much right
 # now.
 @app.route('/')
-def hell_world():
+def hello_world():
     # do work
     flash('UNDER DEVELOMENT')
 
     db = get_db()
-    cur = db.execute('title, link from links order by id desc')
+    cur = db.execute('select * from links')
     entries = cur.fetchall()
 
     return render_template('app.html', entries=entries)
