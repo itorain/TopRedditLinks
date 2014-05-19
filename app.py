@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__) 
 
 # app.route is called a decorator. don't worry about it too much right
 # now.
 @app.route('/')
 def hell_world():
-    return 'Top Reddit Links!'
+    # do work
+    return render_template('app.html')
 
 # a few example pages
 @app.route('/hello')
