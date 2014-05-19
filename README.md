@@ -4,6 +4,7 @@ TopRedditLinks
 * Some more stuff and links
 
 ****** dependencies
+
 *this is bad form, I know.*
 
 praw (python reddit api wrapper)
@@ -17,5 +18,6 @@ sudo pip install flask
 ```
 
 ****** TODO
+
 * migrate to a virtualenv
 * document
