@@ -3,7 +3,7 @@ TopRedditLinks
 * Links and stuff
 * Some more stuff and links
 
-****** dependencies
+###### dependencies
 
 *this is bad form, I know.*
 
@@ -17,7 +17,7 @@ flask
 sudo pip install flask
 ```
 
-****** TODO
+###### TODO
 
 * migrate to a virtualenv
 * document
